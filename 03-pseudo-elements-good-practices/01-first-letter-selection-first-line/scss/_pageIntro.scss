@@ -1,0 +1,19 @@
+.page_intro {
+	margin-bottom: 3rem;
+	font-size: 1.25rem;
+
+	&::first-letter {
+		font-size: 3rem;
+		font-weight: 600;
+		color: #0e7981;
+	}
+
+	&::first-line {
+		color: #0eb2bf
+	}
+
+	&::selection {
+		background-color: #0e7981;
+		color: white;
+	}
+}
