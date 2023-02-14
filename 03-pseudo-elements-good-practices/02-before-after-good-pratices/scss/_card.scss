@@ -1,0 +1,114 @@
+.card {
+	position: relative;
+
+	background: #fff;
+	color: #2c3e50;
+	border: 0.0625rem solid #2c3e50;
+	border-radius: 0.5rem;
+
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+	&::before {
+		content: "Sold out";
+		position: absolute;
+		top: 0.5rem;
+		right: 0.5rem;
+
+		display: grid;
+		place-items: center;
+		width: 100px;
+		height: 30px;
+
+		border-radius: 0.5rem;
+		background: #d64077;
+
+		color: #fff;
+		font-weight: 700;
+
+		z-index: 1;
+	}
+
+	&__media {
+		position: relative;
+
+		display: block;
+		width: 100%;
+		height: auto;
+
+		border-bottom: 1px solid #0eb2bf;
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+
+			width: 100%;
+			height: 65px;
+
+			background-image: linear-gradient(to top, #2c3e50, transparent);
+		}
+	}
+
+	&__image {
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		border-radius: 0.5rem 0.5rem 0 0;
+
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+	}
+
+	&__caption {
+		position: absolute;
+		bottom: 0.7em;
+
+		padding: 0.5rem 1rem;
+
+		color: #fff;
+		font-weight: 600;
+		font-size: 1.25rem;
+
+		z-index: 1;
+	}
+
+	&__caption--pending {
+		color: #ddbb18;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+
+		padding: 1rem;
+	}
+
+	&__title {
+		font-weight: 600;
+		@include line-clamp(2);
+	}
+
+	&__link {
+		@extend .nav_link;
+
+		display: flex;
+		align-items: center;
+		padding: 0 0.5rem;
+		height: 2rem;
+
+		background-color: #0eb2bf;
+		border-radius: 0.25rem;
+
+		font-weight: 700;
+		color: #fff;
+
+		transition: all 0.5s ease-in-out;
+
+		&:hover {
+			transform: scale(1.15);
+			transition: all 0.5s ease-in-out;
+			color: #fff !important;
+		}
+	}
+}
