@@ -1,0 +1,77 @@
+body {
+  min-height: 100vh;
+
+  background-image: linear-gradient(90deg,
+      #2c3e50 0%,
+      #0eb2bf 50%,
+      #0e7981 100%);
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.125;
+  color: #2c3e50;
+}
+
+ul {
+  list-style: none;
+  padding: unset;
+}
+
+a {
+  color: #0e7981;
+}
+
+a:hover {
+  animation: color 0.5s forwards;
+}
+
+@keyframes color {
+  to {
+    color: #2c3e50;
+  }
+}
+
+.nav_link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #0EB2BF;
+
+  cursor: default;
+}
+
+.page_container {
+  padding: 2rem;
+  margin: 3rem auto;
+  max-width: 60rem;
+
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.main_content {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  gap: 2rem;
+}
+
+.main_title {
+  margin-bottom: 2rem;
+
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0e7981;
+
+  text-align: center;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 0.0625rem;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 0.0625rem;
+}

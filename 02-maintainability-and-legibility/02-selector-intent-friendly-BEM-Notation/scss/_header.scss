@@ -1,0 +1,26 @@
+.page_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #0e7981;
+}
+
+.page_header__title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.social_media {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social_media__logo {
+  display: block;
+  width: 2rem;
+  height: auto;
+}
