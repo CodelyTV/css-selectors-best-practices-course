@@ -1,0 +1,33 @@
+#container {
+	padding: 2rem;
+	margin: 3rem auto;
+	max-width: 60rem;
+
+	background-color: #fff;
+	border-radius: 0.5rem;
+}
+
+h1 {
+	margin-bottom: 2rem;
+
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: #0e7981;
+
+	text-align: center;
+}
+
+section {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+	gap: 2rem;
+}
+
+a.link {
+	text-decoration: none;
+	font-weight: 600;
+	color: #0EB2BF;
+
+	cursor: default;
+}
