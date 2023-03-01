@@ -1,0 +1,22 @@
+@mixin truncate {
+	overflow: hidden;
+
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+@mixin line-clamp($lines) {
+	display: -webkit-box;
+	-webkit-line-clamp: $lines;
+	-webkit-box-orient: vertical;
+
+	overflow: hidden;
+}
+
+%nav-link {
+	color: #0EB2BF;
+	font-weight: 600;
+	text-decoration: none;
+
+	cursor: default;
+}
