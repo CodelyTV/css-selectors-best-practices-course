@@ -1,0 +1,40 @@
+.checkbox {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+
+	display: inline-block;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: auto;
+	margin-right: 0.25rem;
+
+	background-color: #fff;
+	border: 0.13rem solid #2c3e50;
+	border-radius: 0.25rem;
+
+	&--checked {
+		font-size: 1.75rem;
+
+		border: 0.13rem solid #0eb2bf;
+
+		&::before {
+			position: absolute;
+			top: -0.3125rem;
+
+			content: "\2713";
+		}
+	}
+
+	&__label {
+		position: relative;
+
+		display: block;
+		padding-left: 2rem;
+
+		font-weight: 600;
+
+		user-select: none;
+	}
+}
