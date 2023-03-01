@@ -1,0 +1,84 @@
+body {
+	min-height: 100vh;
+
+	color: #2c3e50;
+	font-weight: 400;
+	font-size: 1rem;
+	font-family: Montserrat, sans-serif;
+	line-height: 1.125;
+
+	background-image: linear-gradient(90deg, #2c3e50 0%, #0eb2bf 50%, #0e7981 100%);
+}
+
+ul {
+	padding: unset;
+
+	list-style: none;
+}
+
+a {
+	color: #0e7981;
+
+	&:hover {
+		animation: color 0.5s forwards;
+	}
+}
+
+@keyframes color {
+	to {
+		color: #2c3e50;
+	}
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+.page_container {
+	max-width: 60rem;
+	margin: 3rem auto;
+	padding: 2rem;
+
+	background-color: #fff;
+	border-radius: 0.5rem;
+}
+
+.main_title {
+	margin-bottom: 2rem;
+
+	color: #0e7981;
+	font-weight: 700;
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.conference_list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+	gap: 2rem;
+	justify-content: center;
+
+	margin-bottom: 3rem;
+	padding-bottom: 3rem;
+
+	border-bottom: .0625rem solid #2c3e50;
+}
+
+.sr-only:not(:focus, :active) {
+	position: absolute;
+
+	width: 0.0625rem;
+	height: 0.0625rem;
+	overflow: hidden;
+
+	white-space: nowrap;
+
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+}
+
+.hide_content {
+	position: absolute;
+
+	clip: rect(0, 0, 0, 0);
+}
