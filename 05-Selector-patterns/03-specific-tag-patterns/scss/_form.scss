@@ -1,0 +1,169 @@
+.form-group {
+	&>*+* {
+		margin-top: 1.5rem;
+	}
+}
+
+.form-title {
+	margin-bottom: 1.25rem;
+
+	&~p:last-of-type {
+		margin-bottom: 2rem;
+	}
+}
+
+label,
+legend {
+	display: block;
+	margin-bottom: 0.5rem;
+
+	font-weight: 600;
+}
+
+fieldset {
+	padding: 1rem;
+
+	border: 1px solid #2c3e50;
+	border-radius: 0.3125rem;
+}
+
+textarea {
+	min-width: 20rem;
+	padding: 1rem;
+
+	border: 1px solid #2c3e50;
+	border-radius: 0.3125rem;
+
+	resize: none;
+}
+
+input:not([type="checkbox"], [type="radio"]) {
+	height: 3rem;
+	padding: 0.25rem;
+
+	border: 1px solid #2c3e50;
+	border-radius: 0.3125rem;
+}
+
+input[type="text"],
+input[type="email"] {
+	min-width: 20rem;
+}
+
+input:disabled {
+	background-color: #bbbec0;
+	opacity: 0.7;
+}
+
+.radio_item {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+
+	height: 2.5rem;
+
+	&:nth-last-of-type(odd) {
+		background-color: #0eb3bf36;
+	}
+}
+
+input[type="radio"]+label {
+	display: inline-block;
+
+	height: 1.5rem;
+	margin-bottom: unset;
+
+	user-select: none;
+}
+
+input[type="radio"] {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+input[type="checkbox"] {
+	position: absolute;
+
+	clip: rect(0, 0, 0, 0);
+}
+
+input[type="checkbox"]+label {
+	position: relative;
+
+	display: inline-block;
+	padding-left: 2rem;
+
+	user-select: none;
+}
+
+input[type="checkbox"]+label::before {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+
+	display: inline-block;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: auto;
+	margin-right: 0.25rem;
+
+	line-height: .65;
+	vertical-align: .1em;
+
+	background-color: #fff;
+	border: 0.13rem solid #2c3e50;
+	border-radius: 0.25rem;
+
+	content: "";
+
+}
+
+input[type="checkbox"]:checked+label::before {
+	font-size: 1.75rem;
+
+	border: 0.13rem solid #0eb2bf;
+
+	content: "\2713";
+}
+
+input[type="checkbox"]:focus-visible+label::before {
+	box-shadow: 0 0 0 3px #ffbf47;
+}
+
+.error-message {
+	display: none;
+
+	margin-top: 0.5rem;
+
+	color: #cb648c;
+	font-weight: bold;
+}
+
+
+input:not(:focus, :placeholder-shown):invalid {
+	border-color: #cb648c;
+}
+
+input:not(:focus, :placeholder-shown):invalid~.error-message {
+	display: block;
+}
+
+button {
+	min-width: 12.5rem;
+	height: 3rem;
+	padding: 0.25rem;
+
+	color: #FFF;
+	font-weight: 700;
+
+	background-color: #0e7981;
+
+	border: 1px solid #0e7981;
+	border-radius: 0.3125rem;
+
+	&:hover {
+		background-color: #0eb2bf;
+		border-color: #0eb2bf;
+	}
+}
