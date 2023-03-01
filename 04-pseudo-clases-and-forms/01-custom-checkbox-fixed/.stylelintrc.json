@@ -1,0 +1,25 @@
+{
+  "overrides": [
+    {
+      "files": ["**/*.scss"]
+    }
+  ],
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-rational-order"
+  ],
+  "rules": {
+    "indentation": "tab",
+    "scss/dollar-variable-pattern": null,
+    "scss/dollar-variable-empty-line-before": null,
+    "selector-id-pattern": null,
+    "selector-class-pattern": null,
+    "declaration-empty-line-before": null,
+    "plugin/rational-order": [
+      true,
+      {
+        "empty-line-between-groups": true
+      }
+    ]
+  }
+}
