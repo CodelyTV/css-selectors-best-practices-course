@@ -1,0 +1,29 @@
+.page_container {
+	max-width: 60rem;
+	margin: 3rem auto;
+	padding: 2rem;
+
+	background-color: #fff;
+	border-radius: 0.5rem;
+}
+
+.main_title {
+	margin-bottom: 2rem;
+
+	font-weight: 700;
+	font-size: 1.5rem;
+
+	text-align: center;
+}
+
+.conference_list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+	gap: 2rem;
+	justify-content: center;
+
+	margin-bottom: 3rem;
+	padding-bottom: 3rem;
+
+	border-bottom: .0625rem solid #2c3e50;
+}

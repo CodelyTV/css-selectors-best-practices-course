@@ -1,0 +1,71 @@
+body {
+	min-height: 100vh;
+
+	color: #2c3e50;
+	font-weight: 400;
+	font-size: 1rem;
+	font-family: Montserrat, sans-serif;
+	line-height: 1.125;
+
+	background-image: linear-gradient(90deg, #2c3e50 0%, #0eb2bf 50%, #0e7981 100%);
+}
+
+ul {
+	padding: unset;
+
+	list-style: none;
+}
+
+a {
+	color: #0e7981;
+
+	&:hover {
+		animation: color 0.5s forwards;
+	}
+}
+
+@keyframes color {
+	to {
+		color: #2c3e50;
+	}
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #2c3e50
+}
+
+:is(section) :is(h2, h3, h4, h5, h6) {
+	color: #0e7981;
+}
+
+:is(article, aside, nav) :is(h2, h3, h4, h5, h6) {
+	color: #0eb2bf;
+	font-weight: 600;
+}
+
+.sr-only:not(:focus, :active) {
+	position: absolute;
+
+	width: 0.0625rem;
+	height: 0.0625rem;
+	overflow: hidden;
+
+	white-space: nowrap;
+
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+}
+
+.hide_content {
+	position: absolute;
+
+	clip: rect(0, 0, 0, 0);
+}
